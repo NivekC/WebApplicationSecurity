@@ -1,0 +1,139 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(tea.jpeg);
+	background-size: cover;
+	background-position: centre;
+	font-family: sans-serif;
+	/*background-color: red;*/
+	
+}
+.loginbox{
+	width: 320px;
+	height: 510px;
+	background: black;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 100px 30px;
+	border-radius: 30px;
+}
+.signupbox{
+	width: 320px;
+	height: 590px;
+	background: black;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 100px 30px;
+	border-radius: 30px;
+
+}
+.avatar{
+	width:100px; 
+	height:100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0%;
+	left: 110px;
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.logininbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: italic;
+}
+.loginbox input{
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 20px;
+color: #fff;
+font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+border:none;
+outline: none;
+height: 40px;
+background: red;
+color:#fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+	cursor:pointer;
+	background: #ffc107;
+	color: #000;
+}
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+
+}
+
+.signupbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: italic;
+}
+.signupbox input{
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.signupbox input[type="text"], input[type="password"]
+{
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 30px;
+color: #fff;
+font-size: 16px;
+}
+.signupbox input[type="submit"]
+{
+border:none;
+outline: none;
+height: 40px;
+background: red;
+color:#fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.signupbox input[type="submit"]:hover
+{
+	cursor:pointer;
+	background: #ffc107;
+	color: #000;
+}
+.signupbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+
+}

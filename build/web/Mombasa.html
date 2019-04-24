@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mombasa</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+                        
+                        <style>
+                            		* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+h1{
+    text-align: center;
+}
+                        </style>
+</head>
+<body>
+   <header id="header">
+				<div class="header-top">
+					<div class="container">
+			  		<div class="row align-items-center">
+			  			
+			  			<div class="col-lg-6 col-sm-6 col-6 header-top-right">
+							<div class="header-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a>
+							</div>
+			  			</div>
+			  		</div>			  					
+					</div>
+				</div>
+				<div class="container main-menu">
+					<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				       
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="index.html">Home</a></li>
+				          <li><a href="about.html">About</a></li>
+				          <li><a href="packages.html">Packages</a></li>
+                                          <li><a href="contact.html">Contact</a></li>
+				          <li><a href="secureAdmin/Admin.html">Admin</a></li> 		          		          
+				          
+				        </ul>
+				      </nav>					      		  
+					</div>
+				</div>
+			</header><!-- #header -->
+			  
+			<!-- start banner Area -->
+			<section class="about-banner relative">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">				
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Mombasa			
+							</h1>	
+							
+						</div>	
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start hot-deal Area -->
+			<h1>Hot places to visit in Mombasa</h1>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/Horns.jpg" style="width:100%; height: 500px;">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/beach.jpg" style="width:100%; height: 500px;">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/Fort-Jesus.jpg" style="width:100%; height: 500px;">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+			
+
+			<!-- Start destinations Area -->
+			<section class="destinations-area section-gap">
+				<div class="container">
+		            <div class="row d-flex justify-content-center">
+		                <div class="menu-content pb-40 col-lg-8">
+		                    <div class="title text-center">
+		                        <h1 class="mb-10">This month's hot deals</h1>
+		                        <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day to.</p>
+		                    </div>
+		                </div>
+		            </div>	
+                                    <h1>Premium packages</h1>
+					<div class="row">
+                                            
+						<div class="col-lg-4">
+                                                    
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d1.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>Zulu1 Package</h4>
+									<p>
+										Mombasa
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>06 days and 7 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>10.08.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel</span>
+											<span>Open roof van</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>All Inclusive</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 28,000</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+                         
+						<div class="col-lg-4">
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d2.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>Zulu2 package</h4>
+									<p>
+										The beach
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>8 days and 7 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>8.12.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel</span>
+											<span>Land Rover</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>All Inclusive</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 30,000</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d3.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>Zulu3 package</h4>
+									<p>
+										Mombasa
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>10 days and 9 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>30.05.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel</span>
+											<span>Van</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>All Inclusive</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 33,000</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+                                        </div>
+                                    <h1>Classic packages</h1>
+                                    <div class="row">
+                                    <div class="col-lg-4">
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d3.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>Lako1 package</h4>
+									<p>
+										Mombasa
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>3 days and 2 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>30.06.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel</span>
+											<span>Van</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>All Inclusive</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 17,000</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+                                        
+						<div class="col-lg-4">
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d3.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>Lako2 package</h4>
+									<p>
+										Mombasa
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>5 days and 4 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>14.09.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel Option</span>
+											<span>Bus</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>All Inclusive</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 18,000</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+                                       
+						<div class="col-lg-4">
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d3.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>lako3 package</h4>
+									<p>
+										Mombasa
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>4 days and 3 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>17.05.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel</span>
+											<span>Van</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>All Inclusive</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 13,000</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+                                    </div>																										
+					
+                                    <h1>Basic packages</h1>
+					 <div class="row">
+                                    <div class="col-lg-4">
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d3.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>Zawadi1 package</h4>
+									<p>
+										Mombasa
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>2 days and 2 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>17.06.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel</span>
+											<span>Land rover</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>Hotels excluded</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 8,000</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+                                        
+						<div class="col-lg-4">
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d3.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>Zawadi2 package</h4>
+									<p>
+										Mombasa
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>3 days and 2 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>16.10.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel Option</span>
+											<span>Personal vehicle</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>Transport excluded</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 8,500</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+                                       
+						<div class="col-lg-4">
+							<div class="single-destinations">
+								<div class="thumb">
+									<img src="img/packages/d3.jpg" alt="">
+								</div>
+								<div class="details">
+									<h4>Zawadi3 package</h4>
+									<p>
+										Mombasa
+									</p>
+									<ul class="package-list">
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Duration</span>
+											<span>4 days and 3 nights</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Date</span>
+											<span>17.12.2018</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Travel</span>
+											<span>Personal means</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Extras</span>
+											<span>Hotel Excluded</span>
+										</li>
+										<li class="d-flex justify-content-between align-items-center">
+											<span>Price per person</span>
+											<a href="Booking.html" class="price-btn">ksh 13,000</a>
+										</li>													
+									</ul>
+								</div>
+							</div>
+						</div>
+                                    </div>
+				</div>	
+			</section>
+			<!-- End destinations Area -->
+			
+
+			
+
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-6  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Agency</h6>
+								<p>
+									The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point 
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Navigation Links</h6>
+								<div class="row">
+									<div class="col">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="#">Feature</a></li>
+											<li><a href="Packages.html">Services</a></li>
+											<li><a href="#">Portfolio</a></li>
+										</ul>
+									</div>
+																		
+								</div>							
+							</div>
+						</div>							
+						
+				
+				</div>
+			</footer>
+</body>
+</html>

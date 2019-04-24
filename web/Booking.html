@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<style type="text/css">
+		body{
+	margin: 0;
+	padding: 0;
+	background: url(images/tea.jpeg);
+	background-size: cover;
+	background-position: centre;
+	font-family: sans-serif;
+}
+.loginbox{
+	width: 500px;
+	height: 650px;
+	background: black;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 100px 30px;
+	border-radius: 30px;
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.logininbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: italic;
+}
+.loginbox input{
+	width: 200px;
+	margin-bottom: 10px;
+}
+.loginbox textarea{
+	width: 200px;
+	margin-bottom: 10px;
+	height: 40px;
+}
+
+.loginbox input[type="text"], input[type="password"], textarea
+{
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 20px;
+color: #fff;
+font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+border:none;
+outline: none;
+height: 40px;
+background: red;
+color:#fff;
+font-size: 18px;
+border-radius: 20px;
+text-align: center;
+}
+.loginbox input[type="submit"]:hover
+{
+	cursor:pointer;
+	background: #ffc107;
+	color: #000;
+}
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+
+}
+.avatar{
+	width:100px; 
+	height:100px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0%;
+	left: 190px;
+}
+
+	</style>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Bookings</title>
+</head>
+<body>
+	<div class="loginbox">
+		<img src="images/Book.jpg" class="avatar">
+	<h1> Book here</h1>
+	<form action="Books" method="POST">
+		<div class="row">
+  <div class="col-sm-6"><p style="color: red">First_Name</p>
+		<input type="text" name="FirstName" placeholder="FirstName" required=""></div>
+  <div class="col-sm-6"><p style="color: red">Last_Name</p>
+		<input type="text" name="LastName" placeholder=" LastName" required="">
+		<br></div>
+		<div class="col-sm-12">
+			<p style="color: red">Email</p>
+		<input type="text" name="Email" placeholder="Email" required="">
+		</div>
+		<div class="col-sm-6">
+			<p style="color: red">Country</p>
+		<input type="text" name="Country" placeholder="Country" required="">
+		</div>
+		<div class="col-sm-6">
+			<p style="color: red">	Phone_Number</p>
+		<input type="text" name="Phone_Number" placeholder="Phone_Number" required="">
+		</div>
+		<div class="col-sm-12">
+			<p style="color: red">Date</p>
+		<input type="text" name="Date" placeholder="yyyy/mm/dd" required="">
+		<br>
+		</div>
+		
+		<div class="col-sm-6">
+			<p style="color: red">Adults</p>
+		<input type="text" name="Adults" placeholder="Adults" required="">
+		
+		</div>
+		<div class="col-sm-6">
+			<p style="color: red">Children</p>
+		<input type="text" name="Children" placeholder="Children" required="">
+		</div>
+		<div class="col-sm-12">
+			<p style="color: red">Package</p>
+		<textarea rows="4" cols="50" name="Special_Requirements" placeholder="Write some message" required=""></textarea>
+		</div>
+                    <input type="submit" name="submit" value="Book"><br>
+                </div>
+                    </form>
+</div>
+		
+		
+
+</body>
+</html>
+
+
+

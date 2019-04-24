@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<title>SignUp Form</title>
+</head>
+<body>
+	<div class="signupbox">
+	<img src="images/avatar.png" class="avatar">
+	<h1> Sign Up</h1>
+	<form action="insert.php" method="post">
+		<p>First Name</p>
+		<input type="text" name="first_name" placeholder="First Name" required=""> 
+		<p>Last Name</p>
+		<input type="text" name="last_name" placeholder="Last Name" required="">
+		<p>Email</p>
+		<input type="text" name="email" placeholder="Email" required="">
+		<p>Password</p>
+		<input type="password" name="password" placeholder=" Password" required="">
+		<p>Re-type Password</p>
+		<input type="password" name="CPassword" placeholder="Re-type Password" required="">
+		<br>
+	     <p>User type</p>
+		<input type="text" name="user_type" placeholder="User type" required="">
+		<br>
+		<input type="submit" name="submit" value="SignUp"><br>
+		
+	</form>
+</body>
+</html>
